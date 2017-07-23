@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <title>Family Tree</title>
+  </head>
+  <body>
+  </body>
+  <script>
+  class human {
+    set name(newValue) {
+      this._name = newValue;
+    }
+    get name() {
+      return this._name;
+    }
+    set hairColor(newValue) {
+      this._hairColor = newValue;
+    }
+    get hairColor() {
+      return this._hairColor;
+    }
+    set eyeColor(newValue) {
+      this._eyeColor = newValue;
+    }
+    get eyeColor() {
+      return this._eyeColor;
+    }
+    set jumpHeight(newValue) {
+      this._jumpHeight = newValue;
+    }
+    get jumpHeight() {
+      return this._jumpHeight;
+    }
+    vertical() {
+      return(this.name + " can jump " + this.jumpHeight + " inches!")
+    }
+  }
+  let humans = [];
+  let grandpa = new human();
+    grandpa.name = "Grandpa";
+    grandpa.hairColor = "Brown";
+    grandpa.eyeColor = "Green";
+    grandpa.jumpHeight = "23";
+    console.log(grandpa.vertical());
+    humans.push(grandpa.name);
+  let grandma = new human();
+    grandma.name = "Grandma";
+    grandma.hairColor = "Blond";
+    grandma.eyeColor = "Blue";
+    grandma.jumpHeight = "22";
+    console.log(grandma.vertical());
+    humans.push(grandma.name);
+  let dad = new human();
+    dad.name = "Dad";
+    dad.hairColor = "Dirty Blond";
+    dad.eyeColor = "Blue";
+    dad.jumpHeight = "24";
+    console.log(dad.vertical());
+    humans.push(dad.name);
+  let mom = new human();
+    mom.name = "Mom";
+    mom.hairColor = "Blond";
+    mom.eyeColor = "Blue";
+    mom.jumpHeight = "25";
+    console.log(mom.vertical());
+    humans.push(mom.name);
+  let son = new human();
+    son.name = "Son";
+    son.hairColor = "Brown";
+    son.eyeColor = "Green";
+    son.jumpHeight = "26";
+    console.log(son.vertical());
+    humans.push(son.name);
+  console.log(humans);
+  </script>
+</html>

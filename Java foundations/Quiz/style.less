@@ -1,0 +1,70 @@
+@background-color: #000000;
+@text-color: #006600;
+@hover-color: #fff;
+@correct-color: green;
+@base-font-size: 3em;
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2400px;
+  background-color: @background-color;
+  font-family: Arial;
+  color: @text-color;
+}
+
+.head {
+  width: 100%;
+  background-color: @background-color;
+  border: 1px;
+  border-style: solid;
+  border-color: @background-color;
+  margin: 10px;
+}
+
+h1 {
+  font-size: @base-font-size + 3em;
+}
+
+p {
+  font-size: @base-font-size;
+}
+
+.questionBox {
+  width: 100%;
+  height: 296px;
+  background-color: @background-color;
+  border: 1px;
+  border-style: solid;
+  border-color: @background-color;
+  margin: 10px;
+}
+
+.question {
+  width: 90%;
+  background-color: @background-color;
+  border: 1px;
+  border-style: solid;
+  border-color: @background-color;
+  margin: 10px;
+}
+
+.answer {
+  width: 10%;
+  background-color: @background-color;
+  border: 1px;
+  border-style: solid;
+  border-color: @background-color;
+  margin: 10px;
+}
+
+.answer:hover {
+  background-color: @hover-color;
+}
+
+.reset {
+  width: 30%;
+  height: 40px;
+  background-color: #999;
+}

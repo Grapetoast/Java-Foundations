@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet/less" type="text/css" href="style.less">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="main">
+        <div class="head">
+          <h1>Quiz</h1>
+        </div>
+        <div class="questionBox">
+          <div class="question">
+            <h2><u>Question 1</u></h2><br/>
+            <h3>Where was Doctor Doom born?</h3>
+          </div>
+          <div class="answer">Latvia</div>
+          <div class="answer correct">Latveria</div>
+          <div class="answer">Transylvania</div>
+          <div class="answer">Wakanda</div>
+        </div>
+
+        <div class="questionBox">
+          <div class="question">
+            <h2><u>Question 2</u></h2><br/>
+            <h3>Where did Doctor Doom first meet Reed Richards?</h3>
+          </div>
+          <div class="answer">New York University</div>
+          <div class="answer">Battle World</div>
+          <div class="answer correct">Private State University</div>
+          <div class="answer">Baxter Building</div>
+        </div>
+
+        <div class="questionBox">
+          <div class="question">
+            <h2><u>Question 3</u></h2><br/>
+            <h3>Who is the unchallenged master of magic and science?</h3>
+          </div>
+          <div class="answer">Steven Strange</div>
+          <div class="answer">Reed Richards</div>
+          <div class="answer">Tony Stark</div>
+          <div class="answer correct">Victor Von Doom</div>
+        </div>
+
+        <div class="questionBox">
+          <div class="question">
+            <h2><u>Question 4</u></h2><br/>
+            <h3>Who is <u>not</u> in the Cabal?</h3>
+          </div>
+          <div class="answer correct">Magneto</div>
+          <div class="answer">Namor</div>
+          <div class="answer">Loki</div>
+          <div class="answer">Emma Frost</div>
+        </div>
+
+        <div class="questionBox">
+          <div class="question">
+            <h2><u>Question 5</u></h2><br/>
+            <h3>How could Doom have been defeated?</h3>
+          </div>
+          <div class="answer">Thanos the Mad Titan</div>
+          <div class="answer">Richaaaaaaards!</div>
+          <div class="answer">....squirrel girl</div>
+          <div class="answer correct">DoomBot</div>
+        </div>
+
+        <button class="reset" onclick="reset()">Reset</button>
+        <p><span id="score">0</span> Points</p>
+  </div>
+  </body>
+  <script src="java.js"></script>
+</html>
